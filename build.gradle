@@ -5,13 +5,9 @@ plugins {
 
 targetCompatibility = sourceCompatibility = JavaVersion.VERSION_17
 
-version '0.0.1-alpha'
-group 'io.github.ationmc'
-archivesBaseName = 'AtionGradle'
-
-// implementation 'io.github.ationmc:AtionGradle:0.0.1-alpha'
-// implementation 'com.github.AtionMC:AtionGradle:0.0.1-alpha'
-
+archivesBaseName = project.main_name
+version = project.main_version
+group = project.main_group
 
 repositories {
     mavenCentral()
@@ -30,8 +26,6 @@ dependencies {
     implementation("org.ow2.asm:asm-tree:$asmVersion")
     implementation("org.ow2.asm:asm-util:$asmVersion")
 }
-
-
 
 publishing {
 
