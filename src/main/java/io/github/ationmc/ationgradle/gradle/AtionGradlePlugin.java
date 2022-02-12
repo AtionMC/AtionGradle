@@ -43,10 +43,18 @@ public class AtionGradlePlugin implements Plugin<Project> {
                 mavenArtifactRepository.setUrl(extension.minecraft.libraries);
             });
 
+            /*
             //Enaium maven repository
             project.getRepositories().maven(mavenArtifactRepository -> {
                 mavenArtifactRepository.setName("enaium");
                 mavenArtifactRepository.setUrl("https://maven.enaium.cn/");
+            });
+            */
+
+            //Ationmc maven repository
+            project.getRepositories().maven(mavenArtifactRepository -> {
+                mavenArtifactRepository.setName("ationmc");
+                mavenArtifactRepository.setUrl("https://ationmc.github.io/maven/");
             });
 
             //SpongePowered maven repository
