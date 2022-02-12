@@ -9,6 +9,10 @@ version '0.0.1-alpha'
 group 'io.github.ationmc'
 archivesBaseName = 'AtionGradle'
 
+// implementation 'io.github.ationmc:AtionGradle:0.0.1-alpha'
+// implementation 'com.github.AtionMC:AtionGradle:0.0.1-alpha'
+
+
 repositories {
     mavenCentral()
 }
